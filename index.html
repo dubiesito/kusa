@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>   
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="preload" href="images/carrusel/elaboracion_2mod.webp" as="image">
+    <link rel="preload" href="images/carrusel/foto_panoramica2re.webp" as="image">
+    <link rel="preload" href="images/carrusel/autocad.webp" as="image">
+    <link rel="preload" href="images/carrusel/topografia.webp" as="image">
+    <link rel="icon" type="image/x-icon" href="images/favicon3.ico">
+
+    <title>Kusa Ingenieros</title>
+
+
+
+</head>
+
+<body>
+    
+    </a>
+    <body class="d-flex flex-column min-vh-100">
+        <main class="flex-grow-1">
+
+            <header class="banner">
+                <div class="banner-content">
+                    <!--Reemplazar con la imagen por ahora texto-->
+                    <a href="/" class="logo" onclick="window.location.href = '/'; return false;">
+                        <img src="images/logo_blanco.png" alt="Logo de Kusa">
+                    </a>
+                    <!--Menú de navegación-->
+                    <nav class="nav-menu">
+                        <ul>
+
+                            <li><a href="/#nosotros">Nosotros</a></li>
+                            <li><a href="/#servicios">Servicios</a></li>
+                            <li><a href="/#proyectos">Proyectos</a></li>
+                            <li><a href="/#contactanos">Contáctanos</a></li>
+                            <li class="extra-text">
+                                <!--ajustar el enlace de wpp-->
+                                <a href="https://wa.me/925602925?text=¡Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios."  target="_blank" class="phone-box">
+                                    <i class="fa-solid fa-phone-volume"></i> 925602925
+                                </a>
+                            </li>
+                            <a href="https://www.facebook.com/profile.php?id=100092010850282" target="blank">
+                                <img class="redes-logo" src="images/s1.svg" alt="Red social 1">
+                            </a>
+                            <a href="https://www.tiktok.com/@kusaingenieros" target="blank">
+                                <img class="redes-logo" src="images/s2.svg" alt="Red social 2">
+                            </a>
+                            <a href="https://www.instagram.com/kusaingenieros/" target="blank">
+                                <img class="redes-logo" src="images/s3.svg" alt="Red social 3">
+                            </a>
+
+
+                        </ul>
+
+                    </nav>
+
+
+                    <button class="menu-toggle" aria-label="Abrir menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+                </div>
+
+            </header>
+            <a href="https://wa.me/925602925?text=¡Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios." 
+            class="whatsapp-container" target="_blank">
+             <div class="whatsapp-text">¿Necesitas ayuda? <br> Chatea con nosotros</div>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+         </a>
+         
+            <main>
+                <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/carrusel/elaboracion_2mod.webp" class="d-block w-100" alt="Imagen 1">
+                                <div class="carousel-caption ">
+                                    <h2>Elaboración de planos</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carrusel/foto_panoramica2re.webp" class="d-block w-100" alt="Imagen 2">
+                                <div class="carousel-caption ">
+                                    <h2>Habilitaciones urbanas </h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carrusel/topografia.webp" class="d-block w-100" alt="Imagen 3">
+                                <div class="carousel-caption ">
+                                    <h2>Levantamientos topográficos y catastrales</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carrusel/autocad.webp" class="d-block w-100" alt="Imagen 4">
+                                <div class="carousel-caption ">
+                                    <h2>Diseño y construcción de viviendas</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fondo-rojiso">
+                    <p>PLANOS, PROYECTOS Y EXPEDIENTES</p>
+                </div>
+
+
+
+                <div class="seccion-quienes-somos" id="nosotros">
+                    <div class="somos">
+
+                        <div class="text-box">
+                            <h1> ¿Quiénes somos?</h1>
+                            <hr>
+                            <div class="contenido">
+                                <p>
+                                    Somos una empresa dedicada al rubro de ingeniería y construcción, que ofrece
+                                    servicios de diseño y construcción de viviendas, levantamientos topográficos,
+                                    licencias de construcción, lotizaciones, levantamientos catastrales y planos de
+                                    ubicación, líder en el mercado de Sicuani. Diferenciándonos por nuestra amplia
+                                    experiencia y compromiso con el servicio al cliente, contamos con profesionales
+                                    según la necesidad de tus proyectos, brindándote un servicio único y personalizado.
+                                </p>
+                                <img class="imagen-somos" src="images/somos/somos2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="banner-quienes">
+                    <div class="container-2">
+                        <div class="intro">
+                            <h1>¿Por qué <span>KUSA?</span></h1>
+                            <div class="parrafo">
+                                <p>Kusa ingenieros, es tu mejor aliado para concretar tus proyectos de ingeniería.
+                                    <b>Nuestro mejor respaldo son nuestros clientes..!!</b>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="motivos">
+                            <div class="motivo">
+                                <i class="fi fi-ss-drone-alt font_icon drone-icon"></i> <!-- Ícono 1 -->
+                                <hr>
+                                <h3>Equipos de ultima generación</h3>
+                                <p>GPS, Estación total, dron fotogramétrico y sistemas de información.</p>
+                            </div>
+
+                            <div class="motivo">
+                                <i class="fa-solid fa-helmet-safety font_icon"></i> <!-- Ícono 2 -->
+                                <hr>
+                                <h3>Equipo multidisciplinario</h3>
+                                <p> Ingenieros que le darán valor a tus proyecto</p>
+                            </div>
+
+                            <div class="motivo">
+                                <i class="fa-solid fa-person-digging font_icon"></i> <!-- Ícono 3 -->
+                                <hr>
+                                <h3>Amplia experiencia</h3>
+                                <p>En proyectos de ingeniería y construcción.</p>
+                            </div>
+
+                            <div class="motivo">
+                                <i class="fa-solid fa-list-check font_icon"></i> <!-- Ícono 4 -->
+                                <hr>
+                                <h3>Nuestro valores</h3>
+                                <p> Atención personalizada de principio a fin.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="servicios1" id="servicios">
+                    <div class="background-parallax"></div>
+                    <div class="contenido_fondo">
+                        <h2>SERVICIOS</h2>
+                        <div class="contenedor-cartas">
+                            <div class="carta">
+                                <img src="images/servicios/elaboracion_planos.jpg" alt="Icono Planos">
+                                <h3>ELABORACIÓN DE PLANOS</h3>
+                                <p>Elaboramos planos de todas las especialidades: Perimétricos, Arquitectura,
+                                    Estructuras, Instalaciones sanitarias y eléctricas.</p>
+                            </div>
+                            <div class="carta">
+                                <img src="images/servicios/licencia_construcción.jpeg" alt="Icono Supervisión">
+                                <h3>LICENCIAS Y PERMISOS</h3>
+                                <p>Realizamos expedientes técnicos para obtener licencias de construcción en la oficina
+                                    de catastro del municipio.
+                                </p>
+                            </div>
+                            <div class="carta">
+                                <img src="images/servicios/habilitaciones_urbanas.jpg" alt="Icono Trámites">
+                                <h3>HABILITACIONES URBANAS</h3>
+                                <p>Servicios de habilitaciones urbanas desde el levantamiento topográfico, diseño y
+                                    distribución de viviendas y permisos municipales.</p>
+                            </div>
+                            <div class="carta">
+                                <img src="images/servicios/lotizacion.jpg" alt="Icono Licencias">
+                                <h3>PARCELACIÓN Y LOTIZACIONES</h3>
+                                <p>Realizamos subdivisión de predios para lotizaciones y vivienda, entregamos planos de
+                                    cada uno de los lotes con su respectiva memoria descriptiva.
+                                </p>
+                            </div>
+                            <div class="carta">
+                                <img src="images/servicios/diseño_construccion.jpg" alt="Icono Asesoría">
+                                <h3>DISEÑO Y CONSTRUCCIÓN DE VIVIENDAS</h3>
+                                <p>Diseñamos y ejecutamos tu proyecto de vivienda familiar, con supervisión permanente y
+                                    personalizado.
+                                </p>
+                            </div>
+                            <div class="carta">
+                                <img src="images/servicios/asesoria_proyectos.jpg" alt="Icono Asesoría">
+                                <h3>ASESORIA EN PROYECTOS EN GENERAL</h3>
+                                <p>Brindamos asesoría para optimizar los costos y mejorar la viabilidad de tu proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="servicios" id="proyectos">
+                    <h2>PROYECTOS</h2>
+                    <div class="contenedor-cartas2">
+                        <div class="card-container">
+                            <div class="card" data-project="multifamiliar-espinal">
+                                <div class="card-image">
+                                    <img src="images/proyectos/proyecto_1re.webp" alt="Edificio Mamro">
+                                    <div class="overlay">
+                                        <h3>Edificio Mamro</h3>
+                                        <p> -4 pisos <br>
+                                            -200m² <br>
+                                            -Construcción</p>
+                                        <button class="ver-mas" onclick="rellenar"> <a href="proyectos.html"
+                                                target="_blank">Ver más</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="card-title">Edificio Mamro</p>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card" data-project="proyecto-2">
+                                <div class="card-image">
+                                    <img src="images/proyectos/proyecto_2re.webp" alt="Proyecto 2">
+                                    <div class="overlay">
+                                        <h3>Urbanización: APV Santa Rosa</h3>
+                                        <p> <br>
+                                            
+                                            -13,726m² <br>
+                                            -Subdivisión de predios </p>
+                                        <button class="ver-mas" onclick="rellenar"> <a href="proyectos.html"
+                                                target="_blank">Ver más</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="card-title">Urbanización: APV Santa Rosa</p>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card" data-project="proyecto-3">
+                                <div class="card-image">
+                                    <img src="images/proyectos/proyecto_3re.webp" alt="Proyecto 3">
+                                    <div class="overlay">
+                                        <h3>Edificio Familiar Mendoza</h3>
+                                        <p>3 pisos <br>
+                                            -150m² <br>
+                                            -Diseño </p>
+                                        <button class="ver-mas" onclick="rellenar"> <a href="proyectos.html"
+                                                target="_blank">Ver más</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="card-title">Edificio Familiar Mendoza</p>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card" data-project="proyecto-4">
+                                <div class="card-image">
+                                    <img src="images/proyectos/proyecto_4re.webp" alt="Proyecto 4">
+                                    <div class="overlay"><h3>Cerco perimétrico - Comunidad de Pampa Ansa</h3>
+                                        <p>3 pisos <br>
+                                            -6000m² <br>
+                                            -Diseño </p>
+                                            <button class="ver-mas" onclick="rellenar"> <a href="proyectos.html"
+                                                target="_blank">Ver más</a></button>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="card-title">Cerco perimétrico - Comunidad de Pampa Ansa</p>
+                        </div>
+
+                       
+                    </div>
+                </section>
+
+
+                <section class="contact-section" id="contactanos">
+                    <h2>Contáctanos</h2>
+                    <div class="contact-container">
+                        <!-- Mapa de Google -->
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d241.68751789613393!2d-71.23094440317529!3d-14.253205635751907!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1740689326991!5m2!1ses-419!2spe"
+                                style="border:0;" allowfullscreen loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <!-- Información de contacto -->
+                        <div class="contact-info">
+                            <h3><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Ubícanos</span></h3>
+                            <p>Estamos ubicados en <strong>Prolongación Avenida confederación s/n</strong>, frente al Instituto Tecnológico
+                                Vilcanota.</p>
+                            <p>Horario de atención: Lunes a Viernes de 9:00 AM - 6:00 PM.</p>
+                            <p>Contáctanos en nuestra oficina, 201 segundo piso o a través del número <a href="https://wa.me/51925602925"
+                                    target="_blank">925602925</a>.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="bg-dark text-light pt-5">
+                <div class="container px-5">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 ">
+                            <h3 class="fw-bold">Kusa Ingenieros</h3>
+                            <p class="pt-2">Kusa ingenieros, es tu mejor aliado para concretar tus proyectos de ingeniería.</p>
+                            <p class="mb-2">925602925</p>
+
+                        </div>
+                        <div class="col text-center">
+                            <h4>Menu</h4>
+                            <ul class="list-unstyled pt-2">
+                                <li class="py-1"> <a href="#nosotros" class="menu-link">Nosotros </a></li>
+                                <li class="py-1"> <a href="#servicios" class="menu-link">Servicios </a></li>
+                                <li class="py-1"> <a href="#proyectos" class="menu-link">Proyectos </a></li>
+                                <li class="py-1"> <a href="#contactanos" class="menu-link">Contáctanos </a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-6 col-lg-3 text-lg-end">
+                            <h4>Enlaces de interés</h4>
+                            <div class="social-media pt-2">
+                                <a href="https://www.facebook.com/profile.php?id=100092010850282"
+                                    class="text-light fs-2 me-3" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.tiktok.com/@kusaingenieros" class="text-light fs-2 me-3"
+                                    target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://www.instagram.com/kusaingenieros/" class="text-light fs-2 me-3"
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://wa.me/925602925?text=¡Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios."  class="text-light fs-2" target="_blank"><i
+                                        class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-sm-flex justify-content-between py-1">
+                        <p>2025 ©. All Rights Reserved. </p>
+                        <p>
+                            <a class="text-light text-decoration-none pe-4">Términos de uso</a>
+                            <a class="text-light text-decoration-none"> Política de privacidad</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+            <script defer src="script.js"></script>
+
+
+            <script>
+                window.addEventListener('load', function () {
+                    // Fuerza un recálculo de estilos
+                    document.body.style.visibility = 'hidden';
+                    setTimeout(function () {
+                        document.body.style.visibility = 'visible';
+                    }, 0);
+                });
+            </script>
+    </body>
+
+</html>

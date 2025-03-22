@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="icon" type="image/x-icon" href="images/favicon3.ico">
+
+</head>
+<body>
+
+
+    <header class="banner">
+        <div class="banner-content">
+            <!--Reemplazar con la imagen por ahora texto-->
+            <a href="/#" class="logo">
+                <img src="images/logo_blanco.png" alt="Logo de Kusa">
+            </a>
+            <!--Menú de navegación-->
+            <nav class="nav-menu">
+                <ul>
+
+                    <li><a href="/#nosotros">Nosotros</a></li>
+                    <li><a href="/#servicios">Servicios</a></li>
+                    <li><a href="/#proyectos">Proyectos</a></li>
+                    <li><a href="/#contactanos">Contáctanos</a></li>
+                    <li class="extra-text">
+                        <!--ajustar el enlace de wpp-->
+                        <a href="https://wa.me/925602925?text=¡Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios." target="_blank" class="phone-box">
+                            <i class="fa-solid fa-phone-volume"></i> 925602925
+                        </a>
+                    </li>
+                    <a href="https://www.facebook.com/profile.php?id=100092010850282" target="blank">
+                        <img class="redes-logo" src="images/s1.svg" alt="Red social 1">
+                    </a>
+                    <a href="https://www.tiktok.com/@kusaingenieros" target="blank">
+                        <img class="redes-logo" src="images/s2.svg" alt="Red social 2">
+                    </a>
+                    <a href="https://www.instagram.com/kusaingenieros/" target="blank">
+                        <img class="redes-logo" src="images/s3.svg" alt="Red social 3">
+                    </a>
+
+
+                </ul>
+
+            </nav>
+
+
+            <button class="menu-toggle" aria-label="Abrir menú" >
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+        </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
+
+    </script>    
+    </header>
+
+    <div id="project-detail">
+        <!-- El contenido se cargará aquí dinámicamente -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectedProject = localStorage.getItem('selectedProject'); // Obtiene el proyecto seleccionado
+            const projectDetail = document.getElementById('project-detail');
+
+            if (selectedProject) {
+                // Define el contenido para cada proyecto
+                let content = '';
+                switch (selectedProject) {
+                    case 'multifamiliar-espinal':
+                        content = `
+                            <h1>Edificio Mamro</h1>
+                            <hr>
+                            <div class="project-info">
+                                <div class="info-column">
+                                    <h3>Pisos:</h3>
+                                    <p>4 pisos</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Área:</h3>
+                                    <p>200m²</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Ubicación:</h3>
+                                    <p>Sicuani</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Tiempo:</h3>
+                                    <p>12 meses</p>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <img src="images/proyectos/proyecto_1re.webp" alt="Imagen 1">
+                                <img src="images/proyectos/proyecto_1re2.webp" alt="Imagen 2">
+                            </div>
+                            <p class="project-description">
+                                Este proyecto consiste en la construcción del un edificio multifamiliar de 4 pisos.
+                            </p>
+                        `;
+                        break;
+                    case 'proyecto-2':
+                        content = `
+                            <h1>Urbanización: APV Santa Rosa</h1>
+                            <hr>
+                            <div class="project-info">
+                                <div class="info-column">
+                                    <h3>Pisos:</h3>
+                                    <p>1 piso</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Área:</h3>
+                                    <p>13,726m²</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Ubicación:</h3>
+                                    <p>Sicuani </p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Tiempo:</h3>
+                                    <p>03 meses</p>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <img src="images/proyectos/proyecto_2re.webp" alt="Imagen 1">
+                                <img src="images/proyectos/proyecto_2re2.webp" alt="Imagen 2">
+                            </div>
+                            <p class="project-description">
+                                EEste proyecto consiste en la subdivisión de un predio matriz en 79 lotes de 120 m2 cada uno.
+                            </p>
+                        `;
+                        break;
+                        case 'proyecto-3':
+                        content = `
+                            <h1>Edificio proyecto 3</h1>
+                            <hr>
+                            <div class="project-info">
+                                <div class="info-column">
+                                    <h3>Pisos:</h3>
+                                    <p>4 pisos</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Área:</h3>
+                                    <p>120m²</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Ubicación:</h3>
+                                    <p>Ciudad X</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Tiempo:</h3>
+                                    <p>10 meses</p>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <img src="images/proyectos/proyecto_3re.webp" alt="Imagen 1">
+                                <img src="images/proyectos/proyecto_3re2.webp" alt="Imagen 2">
+                            </div>
+                            <p class="project-description">
+                                Este es un proyecto moderno con diseño vanguardista y áreas comunes amplias.
+                            </p>
+                        `;
+                        break;
+                        case 'proyecto-4':
+                        content = `
+                            <h1>Cerco perimétrico - Comunidad de Pampa Ansa</h1>
+                            <hr>
+                            <div class="project-info">
+                                <div class="info-column">
+                                    <h3>Pisos:</h3>
+                                    <p>1 piso</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Área:</h3>
+                                    <p>6,000m²</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Ubicación:</h3>
+                                    <p>Sicuani</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Tiempo:</h3>
+                                    <p>02 meses</p>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <img src="images/proyectos/proyecto_4re.webp" alt="Imagen 1">
+                                <img src="images/proyectos/proyecto_4re2.webp" alt="Imagen 2">
+                            </div>
+                            <p class="project-description">
+                                Este proyecto consiste en el diseño de un cerco perimétrico como parte del complejo polideportivo
+                            </p>
+                        `;
+                        break;
+                        case 'proyecto-5':
+                        content = `
+                            <h1>Proyecto 5</h1>
+                            <hr>
+                            <div class="project-info">
+                                <div class="info-column">
+                                    <h3>Pisos:</h3>
+                                    <p>4 pisos</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Área:</h3>
+                                    <p>120m²</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Ubicación:</h3>
+                                    <p>Ciudad X</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Tiempo:</h3>
+                                    <p>10 meses</p>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <img src="images/fondo_servicios.jpg" alt="Imagen 1">
+                                <img src="images/reedificio_largo.jpg" alt="Imagen 2">
+                            </div>
+                            <p class="project-description">
+                                Este es un proyecto moderno con diseño vanguardista y áreas comunes amplias.
+                            </p>
+                        `;
+                        break;
+                        case 'proyecto-6':
+                        content = `
+                            <h1>Proyecto 6</h1>
+                            <hr>
+                            <div class="project-info">
+                                <div class="info-column">
+                                    <h3>Pisos:</h3>
+                                    <p>4 pisos</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Área:</h3>
+                                    <p>120m²</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Ubicación:</h3>
+                                    <p>Ciudad X</p>
+                                </div>
+                                <div class="info-column">
+                                    <h3>Tiempo:</h3>
+                                    <p>10 meses</p>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <img src="images/foto_panomarica2.jpg" alt="Imagen 1">
+                                <img src="images/reedificio_largo.jpg" alt="Imagen 2">
+                            </div>
+                            <p class="project-description">
+                                Este es un proyecto moderno con diseño vanguardista y áreas comunes amplias.
+                            </p>
+                        `;
+                        break;
+                       
+                    // Añade más casos para los otros proyectos
+                    default:
+                        content = `<p>Proyecto no encontrado.</p>`;
+                }
+                projectDetail.innerHTML = content; // Inserta el contenido en el div
+            } else {
+                projectDetail.innerHTML = `<p>No se ha seleccionado ningún proyecto.</p>`;
+            }
+        });
+    </script>
+
+<footer class="bg-dark text-light pt-5">
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <h3 class="fw-bold">Kusa Ingenieros</h3>
+                <p class="pt-2">Kusa ingenieros, es tu mejor aliado para concretar tus proyectos de ingeniería.</p>
+                <p class="mb-2">925602925</p>
+            </div>
+            <div class="col text-center">
+                <h4>Menu</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1"><a href="/#nosotros" class="menu-link">Nosotros</a></li>
+                    <li class="py-1"><a href="/#servicios" class="menu-link">Servicios</a></li>
+                    <li class="py-1"><a href="/#proyectos" class="menu-link">Proyectos</a></li>
+                    <li class="py-1"><a href="/#contactanos" class="menu-link">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3 text-lg-end">
+                <h4>Enlaces de interés</h4>
+                <div class="social-media pt-2">
+                    <a href="https://www.facebook.com/profile.php?id=100092010850282" class="text-light fs-2 me-3" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@kusaingenieros" class="text-light fs-2 me-3" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/kusaingenieros/" class="text-light fs-2 me-3" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/925602925?text=¡Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios." class="text-light fs-2" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-sm-flex justify-content-between py-1">
+            <p>2025 © . All Rights Reserved.</p>
+            <p>
+                <a class="text-light text-decoration-none pe-4">Términos de uso</a>
+                <a class="text-light text-decoration-none">Política de privacidad</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+    
+</body>
+</html>
