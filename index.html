@@ -19,10 +19,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="icon" type="image/x-icon" href="/favicon3.ico">
     <!-- SDKs de Firebase (DEBEN estar en el <head> o antes de tu código) -->
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/firebase@10.7.1/firebase-app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/firebase@10.7.1/firebase-firestore.js"></script>
     <title>Kusa Ingenieros</title>
 
 
@@ -433,33 +431,27 @@
                 });
             </script>
 
-            <!-- Coloca esto ANTES del cierre de </body> en tu index.html -->
-<!-- Firebase SDK (versión compatible con GitHub Pages) -->
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-<!-- SDK opcionales (agrégalos solo si los necesitas) -->
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script> <!-- Para Firestore -->
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js"></script> <!-- Para Storage -->
 
-<script>
+            <script>
   // Configuración de Firebase (CAMBIA ESTOS VALORES POR LOS TUYOS)
-  const firebaseConfig = {
-    apiKey: "AIzaSyBKIO3jMZt3x33ozUz_DxWmNSIfCIKLcN0",  // Reemplaza con tu apiKey
-    authDomain: "kusa-973b2.firebaseapp.com",          // Este es TU dominio
-    projectId: "kusa-973b2",                           // TU projectId
-    storageBucket: "kusa-973b2.appspot.com",           // TU storageBucket
-    messagingSenderId: "639782506838",                 // TU senderId
-    appId: "1:639782506838:web:a8f8534421136547d906f7" // TU appId
+              const firebaseConfig = {
+                apiKey: "AIzaSyBKIO3jMZt3x33ozUz_DxWmNSIfCIKLcN0",  // Reemplaza con tu apiKey
+                authDomain: "kusa-973b2.firebaseapp.com",          // Este es TU dominio
+                projectId: "kusa-973b2",                           // TU projectId
+                storageBucket: "kusa-973b2.appspot.com",           // TU storageBucket
+                messagingSenderId: "639782506838",                 // TU senderId
+                appId: "1:639782506838:web:a8f8534421136547d906f7" // TU appId
   };
 
   // Inicializa Firebase
-  const app = firebase.initializeApp(firebaseConfig);
+              const app = firebase.initializeApp(firebaseConfig);
 
   // Inicializa los servicios que necesitas (Firestore y Storage)
-  const db = firebase.firestore();    // Base de datos
-  const storage = firebase.storage(); // Almacenamiento de archivos
+              const db = firebase.firestore();    // Base de datos
+              const storage = firebase.storage(); // Almacenamiento de archivos
 
   // ¡Listo! Firebase ya está conectado.
-  console.log("Firebase conectado correctamente 🎉");
+              console.log("Firebase conectado correctamente 🎉");
 </script>
             
     </body>
